@@ -2,11 +2,11 @@ Source: debathena-language-support
 Section: debathena/translations
 Priority: extra
 Maintainer: Debathena Project <debathena@mit.edu>
-Build-Depends: cdbs, debhelper, dh-buildinfo, aptitude
+Build-Depends: debhelper (>= 7)
 Standards-Version: 3.9.3
 
 Package: debathena-language-support
 Architecture: all
-Depends: ${misc:Depends}, ${debathena-language-support:Depends}
+Depends: ${misc:Depends}, ibus-anthy, ibus-hangul, ibus-mozc, ibus-pinyin
 Description: Metapackage providing input methods for Debathena
- This metapackage installs all input methods available.
+ This metapackage installs some commonly used input methods.
